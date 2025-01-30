@@ -1,0 +1,54 @@
+/* App container */
+.App {
+  text-align: center;
+  background: url('https://wallup.net/wp-content/uploads/2018/09/29/652152-artwork-fantasy-magical-art-forest-tree-landscape-nature-butterfly-butterflies.jpg') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the entire background */
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width to prevent overflow horizontally */
+  position: relative; /* For positioning butterflies */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Butterfly effect */
+.butterfly {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem; /* Size of the butterfly */
+  pointer-events: auto; /* Allows interaction */
+}
+
+.clicked {
+  border: 2px solid red; /* Red circle effect */
+  border-radius: 50%; /* Make it circular */
+}
+
+/* Header section */
+.App-header {
+  background-color: rgba(40, 44, 52, 0.7); /* Slightly transparent background for readability */
+  height: 100%; /* Ensures it takes up full height */
+  width: 100%; /* Ensures it fits the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: absolute; /* Makes sure the header is above other content */
+  z-index: 10;
+}
+
+/* Link styling */
+.App-link {
+  color: #61dafb;
+}
+
+/* Animation for logo (if applicable) */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
